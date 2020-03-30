@@ -1,0 +1,14 @@
+<label>Server Name</label>
+<input
+type = "text"
+class = "form-ontrol"
+[(ngModel)] = "serverName">
+<p> {{serverName}} </p>
+
+<button
+class = "btn btn-primary"
+[disabled]= "!newServer"
+(click)= "onCreateServer()">Add Button</button>
+<p> {{createNewServer}} </p>
+
+<!-- <p>hello</p> -->
